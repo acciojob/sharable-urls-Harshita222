@@ -1,11 +1,11 @@
 // your code here
 const btn = document.getElementById('button')
-btn.addEventListner("click", (event)=>{
+btn.addEventListener("click", function (event)=>{
 
 	let name = document.getElementById('name').value;
 	let year = document.getElementById('year').value;
 
-	let url = document.getElementById('url').value;
-	url.textContent = `https://localhost:8080/? name=${name}&year=${year}`;
+	let urlEle = document.getElementById('url');
+	urlEle.textContent = `https://localhost:8080/? name=${name}&year=${year}`;
 	
 })
